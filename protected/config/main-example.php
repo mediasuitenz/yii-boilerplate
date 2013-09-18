@@ -39,6 +39,10 @@ return array(
 		//URLs in path-format
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+            //Change this to false to hide index.php in routes
+            //Use an apache VirtualHost to access the site or receive 404s
+            'showScriptName' => true,
+            'caseSensitive' => false,
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
