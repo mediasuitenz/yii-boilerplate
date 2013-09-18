@@ -22,13 +22,18 @@ New Yii Projects
     * assets/
     * protected/runtime/
 e.g.
+
 ```
 chown lewis:www-data assets
 chown lewis:www-data protected/runtime
+
 ```
+
 * Change the default remote to a new repository url
 e.g.
+
 ```
 git remote set-rul origin git@github.com:mediasuitenz/some-new-repo.git
 ```
+
 * Push to repo
