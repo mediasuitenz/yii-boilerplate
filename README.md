@@ -13,4 +13,22 @@ Push any default settings you want for new projects to this repo.
 New Yii Projects
 ----------------
 
-Clone this repo, change your configs and push to a new repo.
+* Clone this repo
+* Create config files
+    * protected/config/main.php
+    * protected/config/console.php
+    * protected/config/test.php
+* Ensure your web server has write access to:
+    * assets/
+    * protected/runtime/
+e.g.
+```
+chown lewis:www-data assets
+chown lewis:www-data protected/runtime
+```
+* Change the default remote to a new repository url
+e.g.
+```
+git remote set-rul origin git@github.com:mediasuitenz/some-new-repo.git
+```
+* Push to repo
