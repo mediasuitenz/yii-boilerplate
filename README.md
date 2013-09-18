@@ -35,3 +35,9 @@ git remote set-rul origin git@github.com:mediasuitenz/some-new-repo.git
 ```
 
 * Push to repo
+
+Hiding index.php
+----------------
+In order to hide index.php from routes configure the url manager in
+main.php to ```'showScriptName' => false``` and create a VirtualHost 
+for this website.
