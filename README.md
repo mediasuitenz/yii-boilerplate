@@ -21,6 +21,7 @@ New Yii Projects
 * Ensure your web server has write access to:
     * assets/
     * protected/runtime/
+* Run ```composer install``` to install yii
 
 ```
 chown lewis:www-data assets
